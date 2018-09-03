@@ -34,7 +34,8 @@ active2 = tf.nn.tanh(Z2)
 W3 = tf.Variable(tf.random_normal([30, 10]))
 b3 = tf.Variable(tf.zeros([10]))
 Z3 = tf.matmul(active2, W3) + b3
-active3 = tf.nn.tanh(Z3)
+# active3 = tf.nn.tanh(Z3)
+# prediction = tf.nn.tanh(Z3)
 
 prediction = tf.nn.softmax(active3)
 
